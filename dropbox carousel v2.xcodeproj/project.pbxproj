@@ -14,6 +14,9 @@
 		A5954EA71D9E1FBC008FDB11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5954EA51D9E1FBC008FDB11 /* LaunchScreen.storyboard */; };
 		A5954EB21D9E1FBC008FDB11 /* dropbox_carousel_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954EB11D9E1FBC008FDB11 /* dropbox_carousel_v2Tests.swift */; };
 		A5954EBD1D9E1FBC008FDB11 /* dropbox_carousel_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954EBC1D9E1FBC008FDB11 /* dropbox_carousel_v2UITests.swift */; };
+		A5954ECB1D9E21F0008FDB11 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954ECA1D9E21F0008FDB11 /* Common.swift */; };
+		A5954ECD1D9E2216008FDB11 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954ECC1D9E2216008FDB11 /* IntroViewController.swift */; };
+		A5954ECF1D9E2590008FDB11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954ECE1D9E2590008FDB11 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A5954EB81D9E1FBC008FDB11 /* dropbox carousel v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dropbox carousel v2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5954EBC1D9E1FBC008FDB11 /* dropbox_carousel_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropbox_carousel_v2UITests.swift; sourceTree = "<group>"; };
 		A5954EBE1D9E1FBC008FDB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5954ECA1D9E21F0008FDB11 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A5954ECC1D9E2216008FDB11 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		A5954ECE1D9E2590008FDB11 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,12 @@
 		A5954E9B1D9E1FBC008FDB11 /* dropbox carousel v2 */ = {
 			isa = PBXGroup;
 			children = (
+				A5954ECA1D9E21F0008FDB11 /* Common.swift */,
 				A5954E9C1D9E1FBC008FDB11 /* AppDelegate.swift */,
 				A5954E9E1D9E1FBC008FDB11 /* ViewController.swift */,
 				A5954EA01D9E1FBC008FDB11 /* Main.storyboard */,
+				A5954ECC1D9E2216008FDB11 /* IntroViewController.swift */,
+				A5954ECE1D9E2590008FDB11 /* LoginViewController.swift */,
 				A5954EA31D9E1FBC008FDB11 /* Assets.xcassets */,
 				A5954EA51D9E1FBC008FDB11 /* LaunchScreen.storyboard */,
 				A5954EA81D9E1FBC008FDB11 /* Info.plist */,
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					A5954E981D9E1FBC008FDB11 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = A98D366H6Z;
 						ProvisioningStyle = Automatic;
 					};
 					A5954EAC1D9E1FBC008FDB11 = {
@@ -260,7 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5954E9F1D9E1FBC008FDB11 /* ViewController.swift in Sources */,
+				A5954ECB1D9E21F0008FDB11 /* Common.swift in Sources */,
 				A5954E9D1D9E1FBC008FDB11 /* AppDelegate.swift in Sources */,
+				A5954ECF1D9E2590008FDB11 /* LoginViewController.swift in Sources */,
+				A5954ECD1D9E2216008FDB11 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A98D366H6Z;
 				INFOPLIST_FILE = "dropbox carousel v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.dropbox-carousel-v2";
@@ -422,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A98D366H6Z;
 				INFOPLIST_FILE = "dropbox carousel v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.dropbox-carousel-v2";
