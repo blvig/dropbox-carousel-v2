@@ -48,20 +48,20 @@ class LoginViewController: UIViewController,UIScrollViewDelegate {
         initialY = fieldParentView.frame.origin.y
         offset = -50
         
-        initialY = buttonParentView.frame.origin.y
+        initialbuttonParentViewY = buttonParentView.frame.origin.y
         offset = -120
         
-        fieldParentView.frame.origin.y = initialY + offset
+        //fieldParentView.frame.origin.y = initialY + offset
         
-        buttonParentView.frame.origin.y = initialbuttonParentViewY + offsetbuttonParentView
+        //buttonParentView.frame.origin.y = initialbuttonParentViewY + offsetbuttonParentView
         
+        scrollView.contentOffset.y = scrollView.contentInset.bottom
         
-    
     NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification: Notification) in
         // Any code you put in here will be called when the keyboard is about to display
         }
         
-    NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (notification: Notification) in
+    /*NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (notification: Notification) in
         
         self.fieldParentView.frame.origin.y = self.initialY
         self.buttonParentView.frame.origin.y = self.initialY
