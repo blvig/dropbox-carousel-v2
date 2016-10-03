@@ -49,13 +49,14 @@ class LoginViewController: UIViewController,UIScrollViewDelegate {
         offset = -50
         
         initialY = buttonParentView.frame.origin.y
-        offset = -50
+        offset = -120
         
         fieldParentView.frame.origin.y = initialY + offset
         
-        buttonParentView.frame.origin.y = initialY + offset
+        buttonParentView.frame.origin.y = initialbuttonParentViewY + offsetbuttonParentView
         
         
+    
     NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification: Notification) in
         // Any code you put in here will be called when the keyboard is about to display
         }
@@ -74,6 +75,9 @@ class LoginViewController: UIViewController,UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didTap(_ sender: AnyObject) {
+        view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation

@@ -138,6 +138,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AhH-5V-tHn" appends="YES" id="6wE-KL-wHF"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -157,6 +161,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XU8-Wp-ZzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AhH-5V-tHn">
+                    <connections>
+                        <action selector="didTap:" destination="32C-JN-oqp" id="cID-0b-ZZF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1177.5" y="129"/>
         </scene>
