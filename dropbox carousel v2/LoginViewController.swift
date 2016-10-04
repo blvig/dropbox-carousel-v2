@@ -37,11 +37,11 @@ class LoginViewController: UIViewController,UIScrollViewDelegate {
         
         scrollView.contentInset.bottom = 100
         
-        //initialY = fieldParentView.frame.origin.y
-        offset = -80
+        initialY = fieldParentView.frame.origin.y
+        offset = -20
         
         buttonInitialY = buttonParentView.frame.origin.y
-        buttonOffset = -120
+        buttonOffset = -80
         
     NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification: Notification) in
         // Any code you put in here will be called when the keyboard is about to display
@@ -121,6 +121,9 @@ class LoginViewController: UIViewController,UIScrollViewDelegate {
             //performSegue(withIdentifier: "signIn", sender: nil)
   
         }
+    }
+    @IBAction func didTapBackButton(_ sender: AnyObject) {
+        navigationController!.popViewController(animated: true)
     }
 
     func presentAlert(){
