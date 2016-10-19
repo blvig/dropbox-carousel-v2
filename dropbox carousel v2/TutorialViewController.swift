@@ -9,13 +9,14 @@
 import UIKit
 
 class TutorialViewController: UIViewController {
+    
+    @IBOutlet weak var pageContol: UIScrollView!
 
-    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: 667, height: 1500)
+        pageContol.contentSize = CGSize(width: 1500, height: 667)
 
         // Do any additional setup after loading the view.
     }

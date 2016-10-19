@@ -38,7 +38,7 @@
                                         <rect key="frame" x="24" y="1253" width="328" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="32C-JN-oqp" kind="push" id="5Rj-Lv-Y9F"/>
+                                            <segue destination="32C-JN-oqp" kind="modal" id="E4g-QL-jvs"/>
                                         </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="intro_tile2" id="G48-1M-T70">
@@ -68,14 +68,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="660.5" y="137"/>
+            <point key="canvasLocation" x="1202" y="496"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="yR8-1e-OJr">
             <objects>
                 <viewController id="32C-JN-oqp" customClass="LoginViewController" customModule="dropbox_carousel_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Om2-D7-pf5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="936-Ii-PFj">
@@ -108,6 +108,10 @@
                                         <rect key="frame" x="0.0" y="152" width="375" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="create_text" id="185-HI-dKc">
+                                                <frame key="frameInset" minX="27" minY="-92" width="320" height="63"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_text" id="gtt-3a-lMR">
                                                 <frame key="frameInset" minX="27" minY="29" width="320" height="70"/>
                                                 <autoresizingMask key="autoresizingMask"/>
@@ -175,7 +179,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1177.5" y="129"/>
+            <point key="canvasLocation" x="1764.5" y="129"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="DFp-78-TPl">
@@ -186,8 +190,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" pagingEnabled="YES" id="8Vz-uo-ESO">
-                                <frame key="frameInset" width="1500" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <frame key="frameInset"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="welcome1" id="5Nh-Po-gpl">
                                         <rect key="frame" x="2" y="-1" width="375" height="665"/>
@@ -224,13 +228,12 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1500" height="667"/>
                     <connections>
-                        <outlet property="pageControl" destination="8Vz-uo-ESO" id="qaG-fu-e1J"/>
-                        <outlet property="scrollView" destination="8Vz-uo-ESO" id="mKw-UH-jgr"/>
+                        <outlet property="pageContol" destination="8Vz-uo-ESO" id="IwE-3C-WT8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyc-vO-TG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2313" y="129.5"/>
+            <point key="canvasLocation" x="2900" y="129.5"/>
         </scene>
         <!--Timeline View Controller-->
         <scene sceneID="vmp-Hd-ZsS">
@@ -281,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAl-rt-qeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4474.5" y="120.5"/>
+            <point key="canvasLocation" x="5061.5" y="120.5"/>
         </scene>
         <!--Conversations View Controller-->
         <scene sceneID="i7n-rX-Vkw">
@@ -313,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqa-oG-dGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4978.5" y="-238.5"/>
+            <point key="canvasLocation" x="5565.5" y="-238.5"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="eCw-xp-XvH">
@@ -361,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pyA-LQ-fV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4978.5" y="538.5"/>
+            <point key="canvasLocation" x="5565.5" y="538.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PDp-T8-uNM">
@@ -379,7 +382,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjo-DW-nq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125" y="-230"/>
+            <point key="canvasLocation" x="713" y="121"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="828-F2-zPk">
@@ -397,12 +400,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tS-jZ-1w8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3887.5" y="120.5"/>
+            <point key="canvasLocation" x="4474.5" y="120.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="backup_button" width="320" height="97"/>
         <image name="conversations" width="320" height="568"/>
+        <image name="create_text" width="320" height="63"/>
         <image name="feed" width="320" height="1564"/>
         <image name="feed_nav" width="320" height="65"/>
         <image name="intro" width="320" height="1136"/>
